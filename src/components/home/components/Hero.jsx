@@ -26,15 +26,15 @@ const Hero = ({ featuredPost, categories }) => {
           {/* Featured Post cover image */}
           <NextLink href={`/${featuredPost.slug}`} passHref>
             <Link tabIndex={-1}>
-              <Image
-                src={buildImage(featuredPost.featuredImage.public_id)
+              {/* <Image
+                src={buildImage(featuredPost.featuredImage)
                   .resize(Resize.scale().width(1600).height(840))
                   .toURL()}
                 alt={featuredPost.title}
                 htmlWidth={'100%'}
                 htmlHeight={'auto'}
                 tabIndex={0}
-              />
+              /> */}
             </Link>
           </NextLink>
 

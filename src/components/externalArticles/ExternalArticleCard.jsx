@@ -21,14 +21,14 @@ const ExternalArticleCard = ({ article }) => {
     <VStack my={10} p={4} borderRadius={'xl'} shadow={shadow} h={'max-content'}>
       {/* Featured image */}
       <Link href={article.url} tabIndex={-1} isExternal>
-        <Image
+        {/* <Image
           src={article.featuredImage}
           alt={article.title}
           htmlWidth={'100%'}
           htmlHeight={'auto'}
           rounded={'lg'}
           tabIndex={0}
-        />
+        /> */}
       </Link>
 
       {/* Website  */}

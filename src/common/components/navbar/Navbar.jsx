@@ -81,13 +81,13 @@ const Navbar = () => {
         <Center cursor={'pointer'}>
           <NextLink href={'/'} passHref>
             <Link tabIndex={-1}>
-              <Image
+              {/* <Image
                 src={siteConfig.branding.logo}
                 alt={'itsrakesh blog logo'}
                 htmlWidth={50}
                 htmlHeight={50}
                 tabIndex={0}
-              />
+              /> */}
             </Link>
           </NextLink>
         </Center>

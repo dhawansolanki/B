@@ -20,7 +20,7 @@ const CommentBox = () => {
           theme={giscusTheme}
           lang="en"
           loading="lazy"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Box>
     </Container>

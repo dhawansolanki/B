@@ -32,8 +32,8 @@ const ArticleCard = ({ post }) => {
       {/* Cover image */}
       <NextLink href={`/${post.slug}`} passHref>
         <Link tabIndex={-1}>
-          <Image
-            src={buildImage(post.featuredImage.public_id)
+          {/* <Image
+            src={buildImage(post.featuredImage)
               .resize(Resize.scale().width(1600).height(840))
               .toURL()}
             alt={post.title}
@@ -41,7 +41,7 @@ const ArticleCard = ({ post }) => {
             htmlHeight={'auto'}
             rounded={'lg'}
             tabIndex={0}
-          />
+          /> */}
         </Link>
       </NextLink>
 
