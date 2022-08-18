@@ -4,6 +4,7 @@ import { Analytics, client, SEO } from '../common/utils';
 import Navbar from '@/components/navbar/Navbar';
 import HomePage from '@/home/HomePage';
 import { Newsletter } from '@/components/misc';
+
 import Footer from '@/components/footer/Footer';
 
 const Home = ({ featuredPost, posts, snippets, categories, error }) => {
@@ -22,7 +23,8 @@ const Home = ({ featuredPost, posts, snippets, categories, error }) => {
           categories={categories}
           error={error}
         />
-        <Newsletter />
+
+        {/* <Newsletter /> */}
       </main>
       <Footer />
     </>

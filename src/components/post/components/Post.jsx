@@ -132,14 +132,14 @@ const Post = ({ post }) => {
             </HStack>
 
             {/* Featured image */}
-            {/* <Image
+            <Image
               src={buildImage(post.featuredImage.public_id)
                 .resize(Resize.scale().width(1600).height(840))
                 .toURL()}
               alt={post.title}
               htmlWidth={'100%'}
               htmlHeight={'auto'}
-            /> */}
+            />
 
             <HStack alignSelf={'flex-start'} py={5} spacing={4}>
               {/* Author image */}

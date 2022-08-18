@@ -38,7 +38,7 @@ const SearchResultsDisplay = ({
             trigger={'click'}
             isLazy
           >
-            <PopoverContent w={'100vw'}>
+            <PopoverContent w={'100vw'} color={'black'}>
               <PopoverCloseButton onClick={() => setIsOpen(false)} />
               <Center overflowInline={'auto'}>
                 <HStack>
@@ -61,6 +61,7 @@ const SearchResultsDisplay = ({
                                 <Heading
                                   my={2}
                                   size={'sm'}
+                                  color={'black'}
                                   _hover={{ color: 'brand.50' }}
                                   tabIndex={0}
                                 >
@@ -74,9 +75,9 @@ const SearchResultsDisplay = ({
                       ) : (
                         <Center my={20}>
                           {loading ? (
-                            <Spinner size={'lg'} />
+                            <Spinner size={'lg'} color={'black'}/>
                           ) : (
-                            <Heading size={'sm'}>Nothing in Articles</Heading>
+                            <Heading size={'sm'} color={'black'}>Nothing in Articles</Heading>
                           )}
                         </Center>
                       )}
@@ -100,6 +101,7 @@ const SearchResultsDisplay = ({
                                 <Heading
                                   my={2}
                                   size={'sm'}
+                                  color={'black'}
                                   _hover={{ color: 'brand.50' }}
                                   tabIndex={0}
                                 >
@@ -113,9 +115,9 @@ const SearchResultsDisplay = ({
                       ) : (
                         <Center my={20}>
                           {loading ? (
-                            <Spinner size={'lg'} />
+                            <Spinner size={'lg'} color={'black'} />
                           ) : (
-                            <Heading size={'sm'}>Nothing in Snippets</Heading>
+                            <Heading size={'sm'} color={'black'}>Nothing in Snippets</Heading>
                           )}
                         </Center>
                       )}
@@ -131,7 +133,8 @@ const SearchResultsDisplay = ({
                         queriedItems.categories.map((item) => (
                           <>
                             <NextLink
-                              key={item.id}
+                              key={item.id} 
+                              
                               href={`/articles?c=${item.slug}`}
                               passHref
                             >
@@ -139,6 +142,7 @@ const SearchResultsDisplay = ({
                                 <Heading
                                   my={2}
                                   size={'sm'}
+                                  color={'black'}
                                   _hover={{ color: 'brand.50' }}
                                   tabIndex={0}
                                 >
@@ -152,9 +156,9 @@ const SearchResultsDisplay = ({
                       ) : (
                         <Center my={20}>
                           {loading ? (
-                            <Spinner size={'lg'} />
+                            <Spinner size={'lg'} color={'black'}/>
                           ) : (
-                            <Heading size={'sm'}>Nothing in Categories</Heading>
+                            <Heading size={'sm'} color={'black'}>Nothing in Categories</Heading>
                           )}
                         </Center>
                       )}
