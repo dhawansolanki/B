@@ -8,8 +8,7 @@ import SearchPage from '@/search/SearchPage';
 import { Newsletter } from '@/components/misc';
 import Footer from '@/components/footer/Footer';
 
-
-const Articles = ({ posts, error }) => {
+const test = ({ posts, error }) => {
   return (
     <>
       <SEO
@@ -29,14 +28,12 @@ const Articles = ({ posts, error }) => {
           },
           {
             position: 2,
-            name: 'Articles',
+            name: 'Test',
             item: `${process.env.NEXT_PUBLIC_SITE_URL}/articles`
           }
         ]}
       />
-      <Analytics />
 
-      <Navbar />
 
       <main>
         <SearchPage activeTab={0} posts={posts} error={error} />
@@ -77,4 +74,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Articles;
+export default test;

@@ -4,7 +4,7 @@ import { Analytics, client, SEO } from '../common/utils';
 import Navbar from '@/components/navbar/Navbar';
 import HomePage from '@/home/HomePage';
 import { Newsletter } from '@/components/misc';
-
+import {test} from './articles/test';
 import Footer from '@/components/footer/Footer';
 
 const Home = ({ featuredPost, posts, snippets, categories, error }) => {
@@ -23,7 +23,7 @@ const Home = ({ featuredPost, posts, snippets, categories, error }) => {
           categories={categories}
           error={error}
         />
-
+<test />
         {/* <Newsletter /> */}
       </main>
       <Footer />
